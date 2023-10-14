@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>My learning of RevealJS</h1>
+					<br>
+					By: Eran Weiser <br>
+					
+				</section>
+				<section>
+					<a href="https://revealjs.com/" target="_blank">RevealJS Site</a>
+				</section>
+				<section>
+					<section>
+						When we want to go down we use nested sections. <br>
+						The first section, before going down is as in this section. <br>
+					</section>
+					<section>
+						<h2>RevealJS Tutorials</h2>
+						<ul>
+							<li><a href="https://www.youtube.com/playlist?list=PLoqZcxvpWzzf_C8QgHC9XbA-bn18qJ-QV" target="_blank">RevealJS Tutorial</a></li>
+						</ul>
+					</section>
+					<section>
+							Going down slide is done by nested section.
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					  ## Congig Options
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						- RevealJS Initialize itself with an object given to the Initialization method
+						  ```javascript
+							Reveal.initialize({
+								hash: true,
+				
+								// Learn about plugins: https://revealjs.com/plugins/
+								plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+							});							
+						  ```
+						- All Configuration options can be found [here](https://revealjs.com/config/)
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
